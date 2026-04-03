@@ -1,0 +1,21 @@
+name: email_env
+description: Email triage environment for classifying emails into spam, important, or reply
+version: 1.0
+
+actions:
+  - spam
+  - important
+  - reply
+
+observation:
+  type: object
+  properties:
+    email_text:
+      type: string
+    sender:
+      type: string
+    subject:
+      type: string
+
+reward:
+  type: float
